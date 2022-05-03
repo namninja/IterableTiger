@@ -74,6 +74,7 @@ PODS:
     - FlipperKit/FlipperKitNetworkPlugin
   - fmt (6.2.1)
   - glog (0.3.5)
+  - Iterable-iOS-AppExtensions (6.4.2)
   - Iterable-iOS-SDK (6.4.2)
   - Iterable-React-Native-SDK (1.3.0):
     - Iterable-iOS-SDK (~> 6.4.2)
@@ -375,6 +376,7 @@ DEPENDENCIES:
   - FlipperKit/FlipperKitUserDefaultsPlugin (= 0.99.0)
   - FlipperKit/SKIOSNetworkPlugin (= 0.99.0)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - Iterable-iOS-AppExtensions
   - "Iterable-React-Native-SDK (from `../node_modules/@iterable/react-native-sdk`)"
   - OpenSSL-Universal (= 1.1.180)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
@@ -418,6 +420,7 @@ SPEC REPOS:
     - Flipper-RSocket
     - FlipperKit
     - fmt
+    - Iterable-iOS-AppExtensions
     - Iterable-iOS-SDK
     - libevent
     - OpenSSL-Universal
@@ -507,6 +510,7 @@ SPEC CHECKSUMS:
   FlipperKit: d8d346844eca5d9120c17d441a2f38596e8ed2b9
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 85ecdd10ee8d8ec362ef519a6a45ff9aa27b2e85
+  Iterable-iOS-AppExtensions: 8c0b7666c0e8bab40afa108f434973b53066bba7
   Iterable-iOS-SDK: f4403e2c7ed3002a4b88fdaaaace5568f24f9b21
   Iterable-React-Native-SDK: 34d8b8d70dc1ebf39002b089d2f28d1a04016121
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
@@ -538,6 +542,6 @@ SPEC CHECKSUMS:
   Yoga: 9b6696970c3289e8dea34b3eda93f23e61fb8121
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: f50fab2eebb70f6a760c11c211237ff503927c10
+PODFILE CHECKSUM: 35b92a1a200e60729314aa97e09330284d87612d
 
 COCOAPODS: 1.11.3

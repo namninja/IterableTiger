@@ -41,7 +41,7 @@ function MainScreen() {
     <ScrollView style={styles.screen}>
       <KeyboardAvoidingView style={styles.screen} behavior="position">
         <View style={[styles.rootContainer]}>
-          <Title>Guess My Number</Title>
+          <Title>Test App</Title>
 
           <Card>
             <InstructionText style={styles.instructionText}>

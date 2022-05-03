@@ -11,9 +11,12 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		8092ADE8C97A145E934B3425 /* libPods-IterableTigerNSE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E1D76E55B2AA8C1E3D465D /* libPods-IterableTigerNSE.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A0FD25D99293AB3FBBE653BE /* libPods-IterableTiger-IterableTigerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 990798B2331F47529F611BE9 /* libPods-IterableTiger-IterableTigerTests.a */; };
 		D6744B8BE32777A404DFDA10 /* libPods-IterableTiger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F48C372DA2B8C66A7DCE9A0 /* libPods-IterableTiger.a */; };
+		EDF8305E2821B945008D80B6 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8305D2821B945008D80B6 /* NotificationService.m */; };
+		EDF830622821B946008D80B6 /* IterableTigerNSE.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDF8305A2821B945008D80B6 /* IterableTigerNSE.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +27,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = IterableTiger;
 		};
+		EDF830602821B946008D80B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF830592821B945008D80B6;
+			remoteInfo = IterableTigerNSE;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDF830662821B946008D80B6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EDF830622821B946008D80B6 /* IterableTigerNSE.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* IterableTigerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IterableTigerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,14 +60,23 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IterableTiger/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IterableTiger/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IterableTiger/main.m; sourceTree = "<group>"; };
+		2C5A4C1662ECDA371701B5D7 /* Pods-IterableTigerNSE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableTigerNSE.debug.xcconfig"; path = "Target Support Files/Pods-IterableTigerNSE/Pods-IterableTigerNSE.debug.xcconfig"; sourceTree = "<group>"; };
 		2D9D72F64ADD1CBD1A178086 /* Pods-IterableTiger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableTiger.debug.xcconfig"; path = "Target Support Files/Pods-IterableTiger/Pods-IterableTiger.debug.xcconfig"; sourceTree = "<group>"; };
 		5234F723ED773287324EBD0B /* Pods-IterableTiger-IterableTigerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableTiger-IterableTigerTests.release.xcconfig"; path = "Target Support Files/Pods-IterableTiger-IterableTigerTests/Pods-IterableTiger-IterableTigerTests.release.xcconfig"; sourceTree = "<group>"; };
+		52BAF047278443A3380ED34F /* Pods-IterableTigerNSE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableTigerNSE.release.xcconfig"; path = "Target Support Files/Pods-IterableTigerNSE/Pods-IterableTigerNSE.release.xcconfig"; sourceTree = "<group>"; };
+		72E1D76E55B2AA8C1E3D465D /* libPods-IterableTigerNSE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IterableTigerNSE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F48C372DA2B8C66A7DCE9A0 /* libPods-IterableTiger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IterableTiger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = IterableTiger/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		990798B2331F47529F611BE9 /* libPods-IterableTiger-IterableTigerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IterableTiger-IterableTigerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83CE744E8F680631134AAAC /* Pods-IterableTiger-IterableTigerNSE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableTiger-IterableTigerNSE.release.xcconfig"; path = "Target Support Files/Pods-IterableTiger-IterableTigerNSE/Pods-IterableTiger-IterableTigerNSE.release.xcconfig"; sourceTree = "<group>"; };
 		CFE9D08385FD595EE08D71F3 /* Pods-IterableTiger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableTiger.release.xcconfig"; path = "Target Support Files/Pods-IterableTiger/Pods-IterableTiger.release.xcconfig"; sourceTree = "<group>"; };
+		E96997A928712E3AA2370D42 /* Pods-IterableTiger-IterableTigerNSE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableTiger-IterableTigerNSE.debug.xcconfig"; path = "Target Support Files/Pods-IterableTiger-IterableTigerNSE/Pods-IterableTiger-IterableTigerNSE.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EDF830552821A4F3008D80B6 /* IterableTiger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = IterableTiger.entitlements; path = IterableTiger/IterableTiger.entitlements; sourceTree = "<group>"; };
+		EDF8305A2821B945008D80B6 /* IterableTigerNSE.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IterableTigerNSE.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF8305C2821B945008D80B6 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		EDF8305D2821B945008D80B6 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		EDF8305F2821B946008D80B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE8DF1550E999C4C9D106FCE /* Pods-IterableTiger-IterableTigerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableTiger-IterableTigerTests.debug.xcconfig"; path = "Target Support Files/Pods-IterableTiger-IterableTigerTests/Pods-IterableTiger-IterableTigerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +94,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6744B8BE32777A404DFDA10 /* libPods-IterableTiger.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF830572821B945008D80B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8092ADE8C97A145E934B3425 /* libPods-IterableTigerNSE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +145,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				7F48C372DA2B8C66A7DCE9A0 /* libPods-IterableTiger.a */,
 				990798B2331F47529F611BE9 /* libPods-IterableTiger-IterableTigerTests.a */,
+				72E1D76E55B2AA8C1E3D465D /* libPods-IterableTigerNSE.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +163,7 @@
 				13B07FAE1A68108700A75B9A /* IterableTiger */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* IterableTigerTests */,
+				EDF8305B2821B945008D80B6 /* IterableTigerNSE */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C9ED98D3967C0220981992A8 /* Pods */,
@@ -135,6 +178,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* IterableTiger.app */,
 				00E356EE1AD99517003FC87E /* IterableTigerTests.xctest */,
+				EDF8305A2821B945008D80B6 /* IterableTigerNSE.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,8 +190,22 @@
 				CFE9D08385FD595EE08D71F3 /* Pods-IterableTiger.release.xcconfig */,
 				EE8DF1550E999C4C9D106FCE /* Pods-IterableTiger-IterableTigerTests.debug.xcconfig */,
 				5234F723ED773287324EBD0B /* Pods-IterableTiger-IterableTigerTests.release.xcconfig */,
+				E96997A928712E3AA2370D42 /* Pods-IterableTiger-IterableTigerNSE.debug.xcconfig */,
+				C83CE744E8F680631134AAAC /* Pods-IterableTiger-IterableTigerNSE.release.xcconfig */,
+				2C5A4C1662ECDA371701B5D7 /* Pods-IterableTigerNSE.debug.xcconfig */,
+				52BAF047278443A3380ED34F /* Pods-IterableTigerNSE.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDF8305B2821B945008D80B6 /* IterableTigerNSE */ = {
+			isa = PBXGroup;
+			children = (
+				EDF8305C2821B945008D80B6 /* NotificationService.h */,
+				EDF8305D2821B945008D80B6 /* NotificationService.m */,
+				EDF8305F2821B946008D80B6 /* Info.plist */,
+			);
+			path = IterableTigerNSE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,15 +244,35 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				3786A181F2B6BC3653AF7A1E /* [CP] Embed Pods Frameworks */,
 				EE862211E146B915DE3EC2AA /* [CP] Copy Pods Resources */,
+				EDF830662821B946008D80B6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EDF830612821B946008D80B6 /* PBXTargetDependency */,
 			);
 			name = IterableTiger;
 			productName = IterableTiger;
 			productReference = 13B07F961A680F5B00A75B9A /* IterableTiger.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EDF830592821B945008D80B6 /* IterableTigerNSE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF830632821B946008D80B6 /* Build configuration list for PBXNativeTarget "IterableTigerNSE" */;
+			buildPhases = (
+				C5CFF79BA2E410580F053905 /* [CP] Check Pods Manifest.lock */,
+				EDF830562821B945008D80B6 /* Sources */,
+				EDF830572821B945008D80B6 /* Frameworks */,
+				EDF830582821B945008D80B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IterableTigerNSE;
+			productName = IterableTigerNSE;
+			productReference = EDF8305A2821B945008D80B6 /* IterableTigerNSE.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -210,6 +288,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					EDF830592821B945008D80B6 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -228,6 +309,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* IterableTiger */,
 				00E356ED1AD99517003FC87E /* IterableTigerTests */,
+				EDF830592821B945008D80B6 /* IterableTigerNSE */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +328,13 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF830582821B945008D80B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +450,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IterableTiger-IterableTigerTests/Pods-IterableTiger-IterableTigerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C5CFF79BA2E410580F053905 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IterableTigerNSE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EE862211E146B915DE3EC2AA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +528,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDF830562821B945008D80B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF8305E2821B945008D80B6 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -424,6 +543,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* IterableTiger */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		EDF830612821B946008D80B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF830592821B945008D80B6 /* IterableTigerNSE */;
+			targetProxy = EDF830602821B946008D80B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -656,6 +780,78 @@
 			};
 			name = Release;
 		};
+		EDF830642821B946008D80B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5A4C1662ECDA371701B5D7 /* Pods-IterableTigerNSE.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 454L9NG9J9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IterableTigerNSE/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IterableTigerNSE;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IterablePizza.IterableTiger.IterableTigerNSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDF830652821B946008D80B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52BAF047278443A3380ED34F /* Pods-IterableTigerNSE.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 454L9NG9J9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IterableTigerNSE/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IterableTigerNSE;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IterablePizza.IterableTiger.IterableTigerNSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -682,6 +878,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF830632821B946008D80B6 /* Build configuration list for PBXNativeTarget "IterableTigerNSE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF830642821B946008D80B6 /* Debug */,
+				EDF830652821B946008D80B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

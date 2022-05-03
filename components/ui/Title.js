@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: 'white',
+    color: 'yellow',
     textAlign: 'center',
     padding: 12,
     //borderWidth: Platform.OS === 'android' ? 2 : 0,
