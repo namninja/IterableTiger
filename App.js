@@ -39,8 +39,7 @@ export default class App extends React.Component {
     config.autoPushRegistration = true;
     console.log(config);
     Iterable.initialize(iterableAPIKey, config).then(success => {
-      console.log('here I am');
-      Iterable.setEmail('nam.ngo+react3@iterable.com');
+      console.log('Initialization Complete');
     });
     //
   }

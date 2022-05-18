@@ -15,6 +15,8 @@ import Colors from '../utils/constants/colors';
 import {Iterable, IterableConfig} from '@iterable/react-native-sdk';
 
 function MainScreen() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   function updateUser() {
     console.log('update_user');
     Iterable.updateUser(
@@ -36,13 +38,35 @@ function MainScreen() {
       likesToPaint: true,
     });
   }
+  function userLogin() {
+    console.log('user_login');
+    Iterable.setEmail('nam.ngo+react3@iterable.com');
+    setIsLoggedIn(false);
+  }
+  function userLogout() {
+    console.log('user_logout');
+    Iterable.setEmail('');
+    setIsLoggedIn(false);
+  }
 
   return (
     <ScrollView style={styles.screen}>
       <KeyboardAvoidingView style={styles.screen} behavior="position">
         <View style={[styles.rootContainer]}>
           <Title>Test App</Title>
-
+          <Card>
+            <InstructionText style={styles.instructionText}>
+              User Login/Logout
+            </InstructionText>
+            <View style={styles.buttonsContainer}>
+              <View style={styles.buttonContainer}>
+                <PrimaryButton onPress={userLogin}>Login</PrimaryButton>
+              </View>
+              <View style={styles.buttonContainer}>
+                <PrimaryButton onPress={userLogout}>Logout</PrimaryButton>
+              </View>
+            </View>
+          </Card>
           <Card>
             <InstructionText style={styles.instructionText}>
               Push a Button
