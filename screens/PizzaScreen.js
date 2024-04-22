@@ -5,15 +5,28 @@ import Title from '../components/Title';
 import Card from '../components/Card';
 import InstructionText from '../components/InstructionText';
 import Colors from '../utils/constants/colors';
-import {Iterable} from '@iterable/react-native-sdk';
+import {Iterable, IterableCommerceItem} from '@iterable/react-native-sdk';
 
 function PizzaScreen({navigation}) {
+  function updateCart() {
+    console.log('upcateCart event');
+    const purchasedItem = new IterableCommerceItem(
+      'pepSingle001',
+      'Pepperoni Single Slice',
+      8.0,
+      1,
+    );
+    Iterable.updateCart(8, [purchasedItem], null);
+  }
   function orderedPizza() {
     console.log('custom_event');
-    Iterable.trackEvent('orderedPizza', {
-      likesToDance: true,
-      likesToPaint: true,
-    });
+    const purchasedItem = new IterableCommerceItem(
+      'pepSingle001',
+      'Pepperoni Single Slice',
+      8.0,
+      1,
+    );
+    Iterable.trackPurchase(8, [purchasedItem], null);
   }
 
   return (
@@ -26,6 +39,11 @@ function PizzaScreen({navigation}) {
             <InstructionText style={styles.instructionText}>
               Push a Button
             </InstructionText>
+            <View style={styles.buttonsContainer}>
+              <View style={styles.buttonContainer}>
+                <PrimaryButton onPress={updateCart}>Add to Cart</PrimaryButton>
+              </View>
+            </View>
             <View style={styles.buttonsContainer}>
               <View style={styles.buttonContainer}>
                 <PrimaryButton onPress={orderedPizza}>

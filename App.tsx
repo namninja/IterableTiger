@@ -65,7 +65,7 @@ function App(): JSX.Element {
     config.urlHandler = urlHandler;
     config.logLevel = IterableLogLevel.debug;
     config.autoPushRegistration = true;
-    Iterable.initialize(iterableAPIKey, config).then(success => {
+    Iterable.initialize(iterableAPIKey, config).then(_success => {
       console.log('Initialization Complete');
     });
   });

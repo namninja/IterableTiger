@@ -33,7 +33,7 @@ function MainScreen({navigation}) {
   function triggerEvent() {
     console.log('custom_event');
     Iterable.getLastPushPayload().then(payload => console.log(payload));
-    Iterable.trackEvent('atePizza', {
+    Iterable.trackEvent('ProductViewed', {
       likesToDance: true,
       likesToPaint: true,
     });
