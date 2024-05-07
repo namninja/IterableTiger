@@ -4,69 +4,62 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+# 1.  Install Required Software: </br>
+-Make sure you have Node.js installed. You can download it from nodejs.org.</br>
+-Install React Native CLI by running: </br>
+--npm install -g react-native-cli.</br>
+-Install Xcode (for iOS development) or Android Studio (for Android development) depending on your target platform.
+</br></br>
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+# 2. Clone the GitHub Repository:</br>
+- Open your terminal or command prompt.</br>
+- Navigate to the directory where you want to clone the repository.</br>
+- Run the following command to clone the repository:</br>
+- - git clone <repository_url></br>
+- Replace <repository_url> with the actual URL of the GitHub repository.</br>
+</br></br>
 
-To start Metro, run the following command from the _root_ of your React Native project:
+# 3. Install Dependencies:</br>
+- Navigate into the cloned project directory using your Terminal App:</br>
+- - cd <project_directory></br>
+Run the following command to install the project dependencies:</br>
+- -npm install</br>
+- In the root folder, create a file and name it iterableConfig.js and copy and paste the following:</br>
+- - export const iterableAPIKey = 'REPLACE WITH YOUR API KEY';</br>
+- - export const userEmail = 'REPLACE WITH YOUR EMAIL';</br>
+- - export const phoneNumber = 'REPLACE WITH YOUR number;</br>
+</br></br>
 
-```bash
-# using npm
-npm start
+# 4. Run the App on iOS Simulator:</br>
+- If you're on a Mac, you can run the app on the iOS simulator using Xcode.</br>
+- Navigate into the iOS directory:</br>
+- - cd ios</br>
+- Run the following command to install the iOS dependencies:</br>
+- - pod install</br>
+- Go back to the root directory:</br>
+- - cd ..</br>
+- Run the app on the iOS simulator:</br>
+- - npx react-native run-ios</br>
+</br></br>
 
-# OR using Yarn
-yarn start
-```
+# 5. Run the App on Android Emulator:</br>
+- If you're on Windows or Linux, you can run the app on an Android emulator.</br>
+- Start the Android emulator using Android Studio.</br>
+- Run the app on the Android emulator:</br>
+- - npx react-native run-android</br>
+</br></br>
 
-## Step 2: Start your Application
+# 6. View the App:</br>
+- After successfully running the above commands, the app should open on the simulator/emulator.</br>
+</br></br>
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+# 7. If you run into errors running the app in iOS, you may need to do the following within XCode:</br>
+- Click on Pods in the Project Navigator and open Build Settings</br>
+- Select Iterable-React-Native-SDK</br>
+- Search for "Require Only App-Extension-Safe API" and change the requirement to "No"</br>
+- Next, select "RNScreens" and change "Require Only App-Extension-Safe API" and change the requirement to "No"</br>
+</br></br>
+</br></br>
 
 # Learn More
 
